@@ -8,7 +8,7 @@ const WeatherApp = () => {
   const [forecastData, setForecastData] = useState([]); // 5-day forecast
   const [error, setError] = useState(null);
 
-  const apiKey = '3bf5f074d5a1ee17d5593c5615c49e68'; // Your OpenWeatherMap API key
+  const apiKey = '3bf5f074d5a1ee17d5593c5615c49e68'; 
 
   const fetchWeather = async () => {
     const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
